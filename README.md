@@ -1,4 +1,4 @@
-# app_social
+# Chat Doctor
 
 A new Flutter project.
 
