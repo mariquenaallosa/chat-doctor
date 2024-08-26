@@ -1,0 +1,1 @@
+ /home/mariquena/Documentos/Relex/flutter/app/app_social/.dart_tool/flutter_build/58c5a0e22b7cb42682a7cfae30e1836d/native_assets.yaml: 
