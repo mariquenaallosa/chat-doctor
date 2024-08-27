@@ -20,6 +20,8 @@ myTabBar(TabController tabController, BuildContext context){
             dividerColor: Theme.of(context).colorScheme.primaryContainer,
             labelColor: Theme.of(context).colorScheme.secondary,
             indicatorColor:Theme.of(context).colorScheme.secondary ,
+            indicatorSize: TabBarIndicatorSize.label,
+            labelStyle: Theme.of(context).textTheme.bodyMedium,
           ),
     );
 }
