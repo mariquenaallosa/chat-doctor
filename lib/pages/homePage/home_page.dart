@@ -1,5 +1,6 @@
 import 'package:app_social/config/images.dart';
 import 'package:app_social/config/strings.dart';
+import 'package:app_social/pages/homePage/widget/chat_list.dart';
 import 'package:app_social/pages/homePage/widget/tab_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -42,11 +43,32 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
         ],
         bottom: myTabBar(tabController, context),
       ),
-      body: Column(
-        children: [
-          
-        ],
-      ),
+      floatingActionButton: FloatingActionButton.small(
+        shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(Radius.circular(50))),
+        elevation: 0,
+        backgroundColor: Theme.of(context).colorScheme.secondary,
+        foregroundColor: Colors.white,
+        onPressed: (){},
+        child: Icon(Icons.add, size: 20,)
+        ),
+      body: Padding(
+        padding: const EdgeInsets.all(15),
+        child: TabBarView(
+          controller: tabController,
+          children: [
+            ChatList(),
+            ChatList(),
+          ListView(
+            children: [
+              ListTile(
+                title: Text("Name Nitisht"),
+              )
+            ],
+          )
+          ]
+          ),
+      )
     );
   }
 }
