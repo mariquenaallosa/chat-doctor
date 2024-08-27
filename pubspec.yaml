@@ -38,6 +38,7 @@ dependencies:
   flutter_svg: ^2.0.9 # For SVG
   slide_to_act: ^2.0.2 # For welcome slide
   get: ^4.6.6 # For Routing
+  passwordfield: ^0.2.0
  
 dev_dependencies:
   flutter_test:

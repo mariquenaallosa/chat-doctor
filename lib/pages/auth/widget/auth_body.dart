@@ -11,7 +11,7 @@ class AuthPageBody extends StatelessWidget {
   Widget build(BuildContext context) {
     RxBool isLogin = true.obs;
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: Theme.of(context).colorScheme.primaryContainer,
@@ -41,9 +41,9 @@ class AuthPageBody extends StatelessWidget {
                                     ? Theme.of(context).textTheme.bodyLarge
                                     : Theme.of(context).textTheme.labelLarge,
                               ),
-                              SizedBox(height: 5),
+                              const SizedBox(height: 5),
                               AnimatedContainer(
-                                duration: Duration(milliseconds: 200),
+                                duration: const Duration(milliseconds: 200),
                                 width: isLogin.value ? 100 : 0,
                                 height: 3,
                                 decoration: BoxDecoration(
@@ -57,10 +57,10 @@ class AuthPageBody extends StatelessWidget {
                       ),
                       InkWell(
                           splashColor: Colors.transparent,
-          highlightColor: Colors.transparent,
-                        onTap: () {
+                          highlightColor: Colors.transparent,
+                          onTap: () {
                           isLogin.value = false;
-                        },
+                          },
                         child: SizedBox(
                           width: MediaQuery.sizeOf(context).width / 2.5,
                           child: Column(
@@ -73,7 +73,7 @@ class AuthPageBody extends StatelessWidget {
                               ),
                               const SizedBox(height: 5),
                               AnimatedContainer(
-                                duration: Duration(milliseconds: 200),
+                                duration: const Duration(milliseconds: 200),
                                 width: isLogin.value ? 0 : 100,
                                 height: 3,
                                 decoration: BoxDecoration(

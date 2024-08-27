@@ -13,9 +13,10 @@ class WelcomeSlide extends StatelessWidget {
     return SlideAction(
                 onSubmit: () { 
                   Get.offAllNamed("/auth");
+                  return null;
                 },
                 sliderButtonIcon: SvgPicture.asset(AssetsImages.plugSVG, width: 20,),
-                submittedIcon: Container(
+                submittedIcon: SizedBox(
                   width: 25,
                   height:25,
                   child: SvgPicture.asset(

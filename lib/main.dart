@@ -1,5 +1,6 @@
 import 'package:app_social/config/page_path.dart';
 import 'package:app_social/config/themes.dart';
+import 'package:app_social/pages/homePage/home_page.dart';
 import 'package:app_social/pages/welcome/welcome_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

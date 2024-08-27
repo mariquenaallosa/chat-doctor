@@ -15,6 +15,7 @@ class WelcomeHeading extends StatelessWidget {
           children: [
             SvgPicture.asset(
               AssetsImages.appIconSVG,
+              colorFilter: const ColorFilter.mode( Color.fromARGB(255, 226, 227, 228), BlendMode.srcIn),
             ),
           ],
         ),
