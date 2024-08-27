@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class ReceiptTitle extends StatelessWidget {
   final String name;
@@ -9,8 +8,8 @@ class ReceiptTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 10),
-     padding: EdgeInsets.all(10),
+      margin: const EdgeInsets.only(bottom: 10),
+     padding: const EdgeInsets.all(10),
      decoration: BoxDecoration(
        borderRadius: BorderRadius.circular(17),
        color: Theme.of(context).colorScheme.primaryContainer,
@@ -21,7 +20,7 @@ class ReceiptTitle extends StatelessWidget {
           Row(
             children: [
               Icon(Icons.receipt_long, size: 40,color: Theme.of(context).colorScheme.secondary,),
-              SizedBox(width: 25,),
+              const SizedBox(width: 25,),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

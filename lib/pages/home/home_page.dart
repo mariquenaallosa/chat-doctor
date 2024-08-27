@@ -1,9 +1,9 @@
 import 'package:app_social/config/images.dart';
 import 'package:app_social/config/strings.dart';
-import 'package:app_social/pages/homePage/widget/chat_list.dart';
-import 'package:app_social/pages/homePage/widget/history_list.dart';
-import 'package:app_social/pages/homePage/widget/receipt_list.dart';
-import 'package:app_social/pages/homePage/widget/tab_bar.dart';
+import 'package:app_social/pages/home/widget/chat_list.dart';
+import 'package:app_social/pages/home/widget/history_list.dart';
+import 'package:app_social/pages/home/widget/receipt_list.dart';
+import 'package:app_social/pages/home/widget/tab_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -36,11 +36,11 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
         actions: [
           IconButton(
             onPressed: (){}, 
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             ),
             IconButton(
             onPressed: (){}, 
-            icon: Icon(Icons.more_vert),
+            icon: const Icon(Icons.more_vert),
             ),
         ],
         bottom: myTabBar(tabController, context),
@@ -52,13 +52,13 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
         backgroundColor: Theme.of(context).colorScheme.secondary,
         foregroundColor: Colors.white,
         onPressed: (){},
-        child: Icon(Icons.video_call_sharp, size: 30,)
+        child: const Icon(Icons.video_call_sharp, size: 30,)
         ),
       body: Padding(
         padding: const EdgeInsets.all(15),
         child: TabBarView(
           controller: tabController,
-          children: [
+          children: const [
             ChatList(),
             HistoryList(),
             ReceiptList()

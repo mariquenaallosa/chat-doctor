@@ -1,5 +1,6 @@
 import 'package:app_social/pages/auth/auth_page.dart';
-import 'package:app_social/pages/homePage/home_page.dart';
+import 'package:app_social/pages/chat/chat_page.dart';
+import 'package:app_social/pages/home/home_page.dart';
 import 'package:get/get.dart';
 
 
@@ -9,5 +10,8 @@ GetPage(
   ),
   GetPage(
   name: "/home", page: ()=> const HomePage(), transition: Transition.circularReveal
+  ),
+  GetPage(
+  name: "/chat", page: ()=> const ChatPage(), transition: Transition.rightToLeft
   ),
 ];

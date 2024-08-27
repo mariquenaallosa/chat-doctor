@@ -1,5 +1,5 @@
 import 'package:app_social/config/images.dart';
-import 'package:app_social/pages/homePage/widget/history_title.dart';
+import 'package:app_social/pages/home/widget/history_title.dart';
 import 'package:flutter/material.dart';
 
 class HistoryList extends StatelessWidget {
@@ -8,7 +8,7 @@ class HistoryList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
    return ListView(
-            children: [
+            children: const [
               HistoryTitle(imageUrl: AssetsImages.girlPic, name: "Dra. Pierce, Magali", specialty: "Cardiologia",lastCall: "10:00AM"),
               HistoryTitle(imageUrl: AssetsImages.girlPic, name: "Dra. Grey, Mercedes", specialty: "Clinica",lastCall: "10:00PM"),
               HistoryTitle(imageUrl: AssetsImages.girlPic, name: "Dra. Torres, Carolina", specialty: "Traumatologia",lastCall: "Lunes"),

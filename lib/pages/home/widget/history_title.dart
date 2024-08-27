@@ -11,8 +11,8 @@ class HistoryTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 10),
-     padding: EdgeInsets.all(10),
+      margin: const EdgeInsets.only(bottom: 10),
+     padding: const EdgeInsets.all(10),
      decoration: BoxDecoration(
        borderRadius: BorderRadius.circular(17),
        color: Theme.of(context).colorScheme.primaryContainer,
@@ -27,11 +27,11 @@ class HistoryTitle extends StatelessWidget {
            crossAxisAlignment: CrossAxisAlignment.start,
            children: [
              Text(name, style: Theme.of(context).textTheme.bodyMedium,),
-             SizedBox(height: 2,),
+             const SizedBox(height: 2,),
              Text(specialty,style: Theme.of(context).textTheme.labelSmall)
            ],
          ),
-         SizedBox(width: 10,),
+         const SizedBox(width: 10,),
          Text(lastCall, style: Theme.of(context).textTheme.labelMedium)
        ],
      ),

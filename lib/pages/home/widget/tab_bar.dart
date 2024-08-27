@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 
 myTabBar(TabController tabController, BuildContext context){
   return PreferredSize(
-      preferredSize: Size.fromHeight(60),
+      preferredSize: const Size.fromHeight(60),
       child: TabBar(
             controller: tabController,
-            tabs: [
+            tabs: const [
               Tab(
                 text: "Chats",
               ),

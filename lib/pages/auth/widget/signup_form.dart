@@ -1,7 +1,6 @@
 import 'package:app_social/widget/primary_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class SignupForm extends StatefulWidget {
   const SignupForm({super.key});
