@@ -1,6 +1,8 @@
 import 'package:app_social/config/images.dart';
 import 'package:app_social/config/strings.dart';
 import 'package:app_social/pages/homePage/widget/chat_list.dart';
+import 'package:app_social/pages/homePage/widget/history_list.dart';
+import 'package:app_social/pages/homePage/widget/receipt_list.dart';
 import 'package:app_social/pages/homePage/widget/tab_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -58,14 +60,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
           controller: tabController,
           children: [
             ChatList(),
-            ChatList(),
-          ListView(
-            children: [
-              ListTile(
-                title: Text("Name Nitisht"),
-              )
-            ],
-          )
+            HistoryList(),
+            ReceiptList()
           ]
           ),
       )
