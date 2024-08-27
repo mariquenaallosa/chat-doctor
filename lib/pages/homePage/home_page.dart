@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
         backgroundColor: Theme.of(context).colorScheme.secondary,
         foregroundColor: Colors.white,
         onPressed: (){},
-        child: Icon(Icons.add, size: 20,)
+        child: Icon(Icons.video_call_sharp, size: 30,)
         ),
       body: Padding(
         padding: const EdgeInsets.all(15),
